@@ -5,15 +5,26 @@
   <meta charset="utf-8">
 
   <title>TZ EP&R</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="TZ EP&R EOC map">
+  <meta name="author" content="EMI">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  <link href='css/style.css' rel='stylesheet' />
 
 </head>
 
 <body>
-  <h1>Tanzania EP&R</h1>
-  <script src="js/scripts.js"></script>
+  <div id="map"></div>
+  <div id="footer"><img src="img/seprc_letterhead.png" /></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoicnVieWIweCIsImEiOiJjamlqeWFudmMwc2huM2twaXhmYWNvMDV1In0.yk31CcgaO0mTrB9bP4IVmg';
+    var map = new mapboxgl.Map({
+      container: 'map', // HTML container id
+      style: 'mapbox://styles/mapbox/streets-v9', // style URL
+      center: [ 39.319, -6.8367],  // starting position as [lng, lat]
+      zoom: 11
+      });
+  </script>
 </body>
 </html>

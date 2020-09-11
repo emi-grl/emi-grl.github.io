@@ -1,0 +1,1 @@
+mapboxgl.accessToken = 'pk.eyJ1IjoicnVieWIweCIsImEiOiJjamlqeWFudmMwc2huM2twaXhmYWNvMDV1In0.yk31CcgaO0mTrB9bP4IVmg'
